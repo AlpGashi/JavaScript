@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+         <h1>Hello There</h1>
+    <p>Enjoy your website</p>
+    </div>
+   
+    <div id="blockade">123</div>
+    <form id="passform" class="passform" onsubmit="return passcheck()" type="password">
+    
+        password: <input type="password" required id="pass1">
+        <input type="submit">
+    </form>
+
+    <script>
+
+var password="1"
+function passcheck(){
+    if(document.getElementById('pass1').value != password){
+        alert('wrong password')
+        return false
+    }
+    if(document.getElementById('pass1').value==password){
+        document.getElementById("passform").style.display="none"
+        document.getElementById("blockade").style.display = "none";
+        
+    }
+}
+    </script>
+</body>
+
+</html>

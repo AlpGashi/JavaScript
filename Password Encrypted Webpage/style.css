@@ -1,0 +1,18 @@
+#blockade{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 0, 0);
+    z-index: 100;
+    position: absolute;
+}
+button{
+    position: absolute;
+    z-index: 101;
+}
+.wrapper{
+    position: absolute;
+}
+form{
+    z-index: 101;
+    position: absolute;
+}
